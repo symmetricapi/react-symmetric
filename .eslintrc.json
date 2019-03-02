@@ -1,0 +1,51 @@
+{
+  "extends": "eslint:recommended",
+  "root": true,
+  "env": {
+    "es6": true,
+    "browser": true,
+    "commonjs": true,
+    "worker": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": true
+  },
+  "rules": {
+    "arrow-parens": ["error", "as-needed"],
+    "brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "camelcase": "error",
+    "curly": ["error", "multi-line"],
+    "dot-location": ["error", "property"],
+    "dot-notation": "error",
+    "eqeqeq": "error",
+    "function-paren-newline": ["error", "consistent"],
+    "no-cond-assign": ["error", "except-parens"],
+    "no-else-return": "error",
+    "no-floating-decimal": "error",
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "no-loop-func": "error",
+    "no-use-before-define": "error",
+    "no-var": "error",
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error",
+    "prefer-destructuring": "error",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "prefer-template": "error"
+  },
+  "parser": "babel-eslint"
+}
