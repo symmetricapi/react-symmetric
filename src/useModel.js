@@ -14,7 +14,7 @@ export default function useModel(model, attr, clean) {
     if (model.has(attr)) {
       const [value, setValue] = useState(model.get(attr));
       useObserver(model, 'change', attr, () => {
-        setValue((clean && model.dirtyAttributes[attr]) || model.get(attr));
+        setValue(clean ? model.dirtyAttributes[attr] : model.get(attr));
       });
       return [value, model.set.bind(model, attr)];
     } else if (attr === 'isSyncing') {

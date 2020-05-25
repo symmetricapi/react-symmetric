@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Collection, Model, utils } from 'js-symmetric';
+import { Collection, Model, utils } from 'symmetric-js';
 import useObserver from './useObserver';
 
 const { extendObject, isPlainObject } = utils;
@@ -29,6 +29,7 @@ function createResource(Cls, args) {
       [`cancel${suffix}Sync`]: cancelSync,
     };
   });
+  // Auto-fetch when collection params change
   if (params && params instanceof Model) {
     useObserver(params, 'change', (m, a, p) => val.fetch({ reset: reset(p) }));
   }
