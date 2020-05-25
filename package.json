@@ -1,5 +1,5 @@
 {
-  "name": "react-symmetric",
+  "name": "symmetric-react",
   "version": "1.0.0",
   "description": "React hooks for symmetric-js",
   "keywords": [
@@ -13,7 +13,7 @@
     "hooks",
     "symmetric"
   ],
-  "main": "dist/react-symmetric.js",
+  "main": "dist/symmetric-react.js",
   "files": [
     "LICENSE",
     "README.md",
@@ -26,11 +26,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:symmetricapi/react-symmetric.git"
+    "url": "git@github.com:symmetricapi/symmetric-react.git"
   },
-  "homepage": "https://github.com/symmetricapi/react-symmetric",
+  "homepage": "https://github.com/symmetricapi/symmetric-react",
   "bugs": {
-    "url": "https://github.com/symmetricapi/react-symmetric/issues"
+    "url": "https://github.com/symmetricapi/symmetric-react/issues"
   },
   "license": "MIT",
   "devDependencies": {
