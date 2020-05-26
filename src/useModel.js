@@ -11,7 +11,7 @@ import useObserver from './useObserver';
  */
 export default function useModel(model, attr, clean) {
   if (attr) {
-    if (model.has(attr)) {
+    if (model.has(attr) || model.field(attr)) {
       const [value, setValue] = useState(model.get(attr));
       useObserver(model, 'change', attr, () => {
         setValue(clean ? model.dirtyAttributes[attr] : model.get(attr));

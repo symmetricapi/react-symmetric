@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 
-/** Makes functions that return promises into one thrown promise. */
+/** BETA: Makes functions that return promises into one thrown promise. */
 export default function useSuspense(...funs) {
   // Run once with a ref
   // Also could useState(() => {}) but unsure how it handles throwing exceptions
